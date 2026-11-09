@@ -1,0 +1,76 @@
+{
+  "game": "Ashen Hollow Online",
+  "ruleset": "salem_1692_standard_reference",
+  "version": "0.1.0",
+  "types": [
+    "not_a_witch",
+    "witch",
+    "constable"
+  ],
+  "distribution": [
+    {
+      "players": 4,
+      "not_a_witch": 18,
+      "witch": 1,
+      "constable": 1,
+      "tryals_per_player": 5
+    },
+    {
+      "players": 5,
+      "not_a_witch": 23,
+      "witch": 1,
+      "constable": 1,
+      "tryals_per_player": 5
+    },
+    {
+      "players": 6,
+      "not_a_witch": 27,
+      "witch": 2,
+      "constable": 1,
+      "tryals_per_player": 5
+    },
+    {
+      "players": 7,
+      "not_a_witch": 32,
+      "witch": 2,
+      "constable": 1,
+      "tryals_per_player": 5
+    },
+    {
+      "players": 8,
+      "not_a_witch": 29,
+      "witch": 2,
+      "constable": 1,
+      "tryals_per_player": 4
+    },
+    {
+      "players": 9,
+      "not_a_witch": 33,
+      "witch": 2,
+      "constable": 1,
+      "tryals_per_player": 4
+    },
+    {
+      "players": 10,
+      "not_a_witch": 27,
+      "witch": 2,
+      "constable": 1,
+      "tryals_per_player": 3
+    },
+    {
+      "players": 11,
+      "not_a_witch": 30,
+      "witch": 2,
+      "constable": 1,
+      "tryals_per_player": 3
+    },
+    {
+      "players": 12,
+      "not_a_witch": 33,
+      "witch": 2,
+      "constable": 1,
+      "tryals_per_player": 3
+    }
+  ],
+  "source": "Salem 1692 2nd Edition rulebook, printed page 3"
+}

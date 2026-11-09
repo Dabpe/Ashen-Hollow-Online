@@ -1,0 +1,159 @@
+{
+  "game": "Ashen Hollow Online",
+  "ruleset": "salem_1692_standard_reference",
+  "version": "0.1.0",
+  "status": "partial_inventory",
+  "notice": "card_count is null until physical card inventory is checked; do not assume these records represent a complete copy-count list.",
+  "cards": [
+    {
+      "id": "accusation",
+      "name": "Accusation",
+      "color": "red",
+      "base_accusation_value": 1,
+      "effect_id": "accusation_points",
+      "effect_note": "Standard red accusation card.",
+      "copies_in_deck": null,
+      "verification": "article_and_card_reference"
+    },
+    {
+      "id": "evidence",
+      "name": "Evidence",
+      "color": "red",
+      "base_accusation_value": 3,
+      "effect_id": "accusation_points",
+      "effect_note": "May be modified by Cotton Mather.",
+      "copies_in_deck": null,
+      "verification": "article_and_card_reference"
+    },
+    {
+      "id": "witness",
+      "name": "Witness",
+      "color": "red",
+      "base_accusation_value": 7,
+      "effect_id": "accusation_points",
+      "effect_note": "May interact with Will Griggs Alibi conversion.",
+      "copies_in_deck": null,
+      "verification": "article_and_card_reference"
+    },
+    {
+      "id": "alibi",
+      "name": "Alibi",
+      "color": "green",
+      "base_accusation_value": null,
+      "effect_id": "remove_accusations",
+      "effect_note": "Removes accusations; numerical cap pending card-front verification.",
+      "copies_in_deck": null,
+      "verification": "article_summary_needs_card_front"
+    },
+    {
+      "id": "robbery",
+      "name": "Robbery",
+      "color": "green",
+      "base_accusation_value": null,
+      "effect_id": "transfer_hand",
+      "effect_note": "Cannot use for self-benefit; Sarah Good immune.",
+      "copies_in_deck": null,
+      "verification": "article_summary_needs_card_front"
+    },
+    {
+      "id": "arson",
+      "name": "Arson",
+      "color": "green",
+      "base_accusation_value": null,
+      "effect_id": "discard_target_hand",
+      "effect_note": "Sarah Good immune.",
+      "copies_in_deck": null,
+      "verification": "article_summary_needs_card_front"
+    },
+    {
+      "id": "stocks",
+      "name": "Stocks",
+      "color": "green",
+      "base_accusation_value": null,
+      "effect_id": "skip_turn",
+      "effect_note": "A Stocks card causes its target to skip a turn; multiple cards stack.",
+      "copies_in_deck": null,
+      "verification": "rulebook"
+    },
+    {
+      "id": "scapegoat",
+      "name": "Scapegoat",
+      "color": "green",
+      "base_accusation_value": null,
+      "effect_id": "move_cards",
+      "effect_note": "Moves placed cards from one other player to another; self-target prohibited.",
+      "copies_in_deck": null,
+      "verification": "rulebook"
+    },
+    {
+      "id": "curse",
+      "name": "Curse",
+      "color": "green",
+      "base_accusation_value": null,
+      "effect_id": "remove_blue_card",
+      "effect_note": "Removes a Blue card (including Black Cat after Dawn).",
+      "copies_in_deck": null,
+      "verification": "rulebook"
+    },
+    {
+      "id": "asylum",
+      "name": "Asylum",
+      "color": "blue",
+      "base_accusation_value": null,
+      "effect_id": "night_immunity",
+      "effect_note": "Blocks Night kill when owned.",
+      "copies_in_deck": null,
+      "verification": "rulebook"
+    },
+    {
+      "id": "piety",
+      "name": "Piety",
+      "color": "blue",
+      "base_accusation_value": null,
+      "effect_id": "protect_from_accusations",
+      "effect_note": "Exact printed ability needs card-front verification; rulebook confirms interactions.",
+      "copies_in_deck": null,
+      "verification": "rulebook_partial"
+    },
+    {
+      "id": "matchmaker",
+      "name": "Matchmaker",
+      "color": "blue",
+      "base_accusation_value": null,
+      "effect_id": "linked_elimination",
+      "effect_note": "Two linked cards have special Night death interactions.",
+      "copies_in_deck": null,
+      "verification": "rulebook"
+    },
+    {
+      "id": "black_cat",
+      "name": "Black Cat",
+      "color": "blue",
+      "base_accusation_value": null,
+      "effect_id": "conspiracy_target",
+      "effect_note": "Placed at Dawn; causes Tryal reveal on Conspiracy; then behaves as Blue card.",
+      "copies_in_deck": null,
+      "verification": "rulebook"
+    },
+    {
+      "id": "conspiracy",
+      "name": "Conspiracy",
+      "color": "black",
+      "base_accusation_value": null,
+      "effect_id": "exchange_tryals",
+      "effect_note": "Immediately exchange unrevealed Tryals around the table after Black Cat reveal.",
+      "copies_in_deck": null,
+      "verification": "rulebook"
+    },
+    {
+      "id": "night",
+      "name": "Night",
+      "color": "black",
+      "base_accusation_value": null,
+      "effect_id": "night_phase",
+      "effect_note": "Triggers Witch attack, Constable protection, confession; bottom of deck in standard edition.",
+      "copies_in_deck": null,
+      "verification": "rulebook"
+    }
+  ]
+}

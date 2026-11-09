@@ -1,0 +1,218 @@
+{
+  "game": "Ashen Hollow Online",
+  "ruleset": "salem_1692_standard_reference",
+  "version": "0.1.0",
+  "record_count": 15,
+  "provenance": "15 Town Hall cards from user-supplied character ability image; game reference: Salem 1692 2nd Edition rulebook. Not original game artwork.",
+  "notice": "Names and ability summaries are reference data for an internal research prototype; obtain appropriate rights or use original game content for a public release.",
+  "characters": [
+    {
+      "id": "cotton_mather",
+      "name": "Cotton Mather",
+      "occupation": "Minister",
+      "age": 29,
+      "ability_text": "Evidence cards played against you are worth only one accusation",
+      "effect_id": "modify_accusation_value",
+      "trigger": "on_evidence_played_against_self",
+      "uses_per_game": null,
+      "target": "self",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": []
+    },
+    {
+      "id": "william_phips",
+      "name": "William Phips",
+      "occupation": "Governor",
+      "age": 42,
+      "ability_text": "Once during the game, you may \"confess\" without revealing one of your own Tryal cards",
+      "effect_id": "confess_without_tryal_reveal",
+      "trigger": "night_confession",
+      "uses_per_game": 1,
+      "target": "self",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": []
+    },
+    {
+      "id": "george_burroughs",
+      "name": "George Burroughs",
+      "occupation": "Strongman",
+      "age": 40,
+      "ability_text": "Eight total accusations must be played against you to lose a Tryal",
+      "effect_id": "modify_accusation_threshold",
+      "trigger": "on_accusations_against_self",
+      "uses_per_game": null,
+      "target": "self",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": []
+    },
+    {
+      "id": "will_griggs",
+      "name": "Will Griggs",
+      "occupation": "Physician",
+      "age": 47,
+      "ability_text": "You may choose to use Alibi cards as if they were Witness cards, worth seven total accusations",
+      "effect_id": "convert_alibi_to_witness",
+      "trigger": "on_alibi_play",
+      "uses_per_game": null,
+      "target": "other_player",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": []
+    },
+    {
+      "id": "martha_corey",
+      "name": "Martha Corey",
+      "occupation": "Seamstress",
+      "age": 72,
+      "ability_text": "You have the same ability as the first living player to your right",
+      "effect_id": "copy_nearest_living_right",
+      "trigger": "on_ability_lookup",
+      "uses_per_game": null,
+      "target": "dynamic_right_neighbor",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": [
+        "Copied ability changes when the first living player to the right changes.",
+        "Usage-limit tracking for borrowed abilities needs an explicit digital ruling."
+      ]
+    },
+    {
+      "id": "abigail_williams",
+      "name": "Abigail Williams",
+      "occupation": "Child",
+      "age": 11,
+      "ability_text": "When you play the final accusation on a Tryal, you may discard all accusations in front of your own Tryals",
+      "effect_id": "clear_own_accusations",
+      "trigger": "on_final_accusation_by_self",
+      "uses_per_game": null,
+      "target": "self",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": []
+    },
+    {
+      "id": "giles_corey",
+      "name": "Giles Corey",
+      "occupation": "Landowner",
+      "age": 71,
+      "ability_text": "If you draw two Accusation cards on your turn (not Evidence or Witness), show the other players and draw a third card",
+      "effect_id": "extra_draw_if_two_accusations",
+      "trigger": "after_draw_two",
+      "uses_per_game": null,
+      "target": "self",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": [
+        "Only cards specifically named Accusation count toward the condition."
+      ]
+    },
+    {
+      "id": "mary_warren",
+      "name": "Mary Warren",
+      "occupation": "Servant",
+      "age": 17,
+      "ability_text": "You are immune to the ill effects of the Matchmaker and Black Cat",
+      "effect_id": "immune_to_named_token_effects",
+      "trigger": "on_named_token_effect_against_self",
+      "uses_per_game": null,
+      "target": "self",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": [
+        "The exact handling of a Black Cat token assigned to Mary should be specified before coding."
+      ]
+    },
+    {
+      "id": "sarah_good",
+      "name": "Sarah Good",
+      "occupation": "Beggar",
+      "age": 39,
+      "ability_text": "Robbery and Arson cards played against you have no effect and are discarded",
+      "effect_id": "cancel_named_card_effects",
+      "trigger": "on_robbery_or_arson_against_self",
+      "uses_per_game": null,
+      "target": "self",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": []
+    },
+    {
+      "id": "rebecca_nurse",
+      "name": "Rebecca Nurse",
+      "occupation": "Housewife",
+      "age": 71,
+      "ability_text": "Each time a Tryal is revealed on any other player, you may draw one card; Do not draw when Tryals are revealed by death or confession",
+      "effect_id": "draw_on_other_tryal_reveal",
+      "trigger": "on_other_player_tryal_reveal",
+      "uses_per_game": null,
+      "target": "self",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": [
+        "Do not trigger for Tryals revealed as a consequence of death or Confession."
+      ]
+    },
+    {
+      "id": "tituba",
+      "name": "Tituba",
+      "occupation": "Storyteller",
+      "age": 35,
+      "ability_text": "Once during the game, on your turn, before drawing cards you may rearrange the cards in the deck for two lengths of the hourglass",
+      "effect_id": "rearrange_deck",
+      "trigger": "before_own_turn_draw",
+      "uses_per_game": 1,
+      "target": "deck",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": []
+    },
+    {
+      "id": "thomas_danforth",
+      "name": "Thomas Danforth",
+      "occupation": "Judge",
+      "age": 69,
+      "ability_text": "If you place the sixth accusation on a player (or the seventh), you may reveal one of their Tryal cards",
+      "effect_id": "early_tryal_reveal",
+      "trigger": "on_sixth_or_seventh_accusation",
+      "uses_per_game": null,
+      "target": "target_player",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": []
+    },
+    {
+      "id": "ann_putnam",
+      "name": "Ann Putnam",
+      "occupation": "School Girl",
+      "age": 13,
+      "ability_text": "If you place the final Accusation card on a Tryal, you may draw two cards before revealing the Tryal; you may use the new cards during the same turn",
+      "effect_id": "draw_before_tryal_reveal",
+      "trigger": "on_final_accusation_card",
+      "uses_per_game": null,
+      "target": "self",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": [
+        "Requires playing the specifically named Accusation card; not any accusation-producing card."
+      ]
+    },
+    {
+      "id": "john_proctor",
+      "name": "John Proctor",
+      "occupation": "Farmer",
+      "age": 60,
+      "ability_text": "Whenever a player dies, you take all blue cards in front of that player, and all cards in his or her hand, and place them in your own hand",
+      "effect_id": "inherit_eliminated_player_cards",
+      "trigger": "on_other_player_death",
+      "uses_per_game": null,
+      "target": "self",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": []
+    },
+    {
+      "id": "samuel_parris",
+      "name": "Samuel Parris",
+      "occupation": "Pastor",
+      "age": 39,
+      "ability_text": "Twice during the game you may draw up to two cards from the discard pile instead of the deck; This counts as your turn, and you may not draw Black cards",
+      "effect_id": "draw_from_discard",
+      "trigger": "own_turn_action",
+      "uses_per_game": 2,
+      "target": "discard_pile",
+      "status": "transcribed_from_user_supplied_card_image",
+      "notes": [
+        "Consumes the turn; Black cards cannot be selected."
+      ]
+    }
+  ]
+}
